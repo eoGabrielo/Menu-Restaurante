@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #e6d1b1
+}
+
+.containerPrincipal{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerPrincipalElementos{
+    background-color:#e6d1b1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+.containerMenu{
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 3rem;
+    color: #58534c;
+}
+
+.containerLista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+/*BOTOES DA LISTA*/
+.containerLista p{
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #f1d3ab;
+    border: 2px solid #b19a7d;
+    color: #58534c;
+    padding: 0.35rem 1rem;
+    border-radius: 25px;
+    transition: 0.25s;
+}
+
+.containerLista p:hover{
+    color: rgb(250, 250, 250);
+    background-color: #f1d3ab94;
+    border: none;
+}
+
+.containerCard{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.card{
+    padding: 0.75rem;
+    width: 200px;
+    height: 285px;
+    background-color: #b19a7d80;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.card img{
+    border-radius: 25px 25px 5px 5px;
+    width: 100%;
+    height: 100%;
+    max-width:200px;
+    max-height:150px;
+}
+
+.none{
+    display: none;
+}
+
