@@ -20,29 +20,34 @@ O cardápio contém uma variedade de itens fictícios, cada um com uma imagem, u
 
 Este projeto representa uma abordagem simples e interativa para um sistema de menu de restaurante, proporcionando uma experiência dinâmica na visualização do cardápio.
 
-Menu Interativo - JavaScript
-O arquivo JavaScript (script.js) desempenha um papel crucial na dinâmica do menu, controlando a visibilidade dos itens do cardápio com base nas categorias selecionadas. Aqui estão os principais pontos do código:
+# Menu Interativo - JavaScript
 
-Seleção de Elementos HTML
-javascript
-Copy code
+O arquivo JavaScript (`script.js`) desempenha um papel crucial na dinâmica do menu, controlando a visibilidade dos itens do cardápio com base nas categorias selecionadas. Aqui estão os principais pontos do código:
+
+## Seleção de Elementos HTML
+
+```javascript
 const listaTodos = document.querySelector("#listaTodos");
 const listaLanches = document.querySelector("#listaLanches");
 const listaPratos = document.querySelector("#listaPratos");
 const listaBebidas = document.querySelector("#listaBebidas");
+```
+
 Essas linhas de código realizam a seleção dos elementos HTML relacionados aos botões de navegação e categorias do menu, permitindo manipulações dinâmicas.
 
-Seleção de Itens do Cardápio
-javascript
-Copy code
+## Seleção de Itens do Cardápio
+
+```javascript
 const lanche01 = document.querySelector("#lanche01");
 const lanche02 = document.querySelector("#lanche02");
 // ... (outros itens)
+```
+
 Cada item do cardápio é individualmente selecionado, possibilitando a manipulação independente da visibilidade de cada elemento.
 
-Funções de Filtragem por Categoria
-javascript
-Copy code
+## Funções de Filtragem por Categoria
+
+```javascript
 listaLanches.addEventListener("click", function() {
     // Código para exibir apenas itens da categoria "Lanches" e ocultar outros
 });
@@ -58,6 +63,8 @@ listaBebidas.addEventListener("click", function() {
 listaTodos.addEventListener("click", function() {
     // Código para exibir todos os itens do cardápio
 });
+```
+
 Cada função é acionada pelo evento de clique nos botões de navegação correspondentes a cada categoria do menu. O código dentro dessas funções controla quais itens do cardápio são exibidos ou ocultados com base na categoria selecionada.
 
 Essas são as partes fundamentais do código JavaScript que oferecem a funcionalidade de filtragem do menu. As funções são ativadas dinamicamente à medida que o usuário interage com os botões de navegação, proporcionando uma experiência interativa ao explorar o cardápio.
